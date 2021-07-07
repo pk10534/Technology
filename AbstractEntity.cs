@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Technology
+{
+    public abstract class AbstractEntity
+    {
+
+        public abstract string Serials();
+
+
+
+
+
+
+
+    }
+}
