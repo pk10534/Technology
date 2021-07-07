@@ -9,7 +9,7 @@ namespace Technology
     public abstract class AbstractEntity
     {
 
-        public abstract string Serials();
+        public abstract void Serials();
 
 
 

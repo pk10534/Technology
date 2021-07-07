@@ -35,10 +35,11 @@ namespace Technology
             }
         }
 
-        public string Serials()
+        public void Serials()
         {
             int b = 100;
-            return ($"SmartPhone ID: {b++}");
+            Console.WriteLine($"SmartPhone ID: {b++}");
+            
         }
 
         /*

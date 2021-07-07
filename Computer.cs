@@ -22,10 +22,10 @@ namespace Technology
             return RoomNumber;
         }
 
-        public string Serials()
+        public void Serials()
         {
             int b = 100;
-            return ($"Computer ID: {b++}");
+            Console.WriteLine($"Computer ID: {b++}");
         }
 
         /*

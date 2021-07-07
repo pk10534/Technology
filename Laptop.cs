@@ -16,19 +16,19 @@ namespace Technology
             this.PersonalOrWork = personalOrWork;
         }
 
-        public string UsedFor()
+        public void UsedFor()
         {
             if (DeviceOn == false)
             {
-                return "Cannot access device: Currently sleeping";
+                Console.WriteLine("Cannot access device: Currently sleeping");
             }
-            return PersonalOrWork;
+            Console.WriteLine(PersonalOrWork);
         }
 
-        public string Serials()
+        public void Serials()
         {
             int b = 100;
-            return ($"Laptop ID: {b++}");
+            Console.WriteLine($"Laptop ID: {b++}");
         }
 
 

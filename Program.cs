@@ -16,6 +16,15 @@ namespace Technology
             SmartPhone phone1 = new SmartPhone(true, "Patrick's Phone", 0101, true);
             phone1.GetDeviceInfo();
             phone1.Serials();
+            phone1.SmartPhoneTest();
+
+            Laptop num1 = new Laptop("Personal", "Patrick's Laptop");
+            num1.UsedFor();
+
+
+            
+
+
 
 
         }
