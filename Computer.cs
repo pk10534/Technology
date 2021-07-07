@@ -17,9 +17,9 @@ namespace Technology
         }
 
 
-        public int ComputerLocation()
+        public void ComputerLocation()
         {
-            return RoomNumber;
+            Console.WriteLine($"Room number: {RoomNumber}");
         }
 
         public void Serials()

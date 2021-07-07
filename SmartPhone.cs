@@ -23,24 +23,41 @@ namespace Technology
 
 
 
-        public string SmartPhoneTest()
+        public void SmartPhoneTest()
         {
             if (DataPlan == true)
             {
-                return "This is a smartphone, not a computer!";
+                Console.WriteLine("This is a smartphone, not a computer!");
             }
             else 
             {
-                return "This is a Computer!";
+                Console.WriteLine("This is a Computer!");
             }
+        }
+
+        public int SerialsCalculate()
+        {
+            int i = 100;
+            return i++;
         }
 
         public void Serials()
         {
-            int b = 100;
-            Console.WriteLine($"SmartPhone ID: {b++}");
-            
+            int result = SerialsCalculate();
+            Console.WriteLine(result);
         }
+
+
+        /*
+        public void Serials()
+        {
+            int i;
+            for (i = 0; i < 100; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        */
 
         /*
         public int Serials()
