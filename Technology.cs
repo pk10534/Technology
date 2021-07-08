@@ -11,7 +11,10 @@ namespace Technology
         public string Name { get; set; }
         public static int IDNumber { get; set; }
         public bool Sleeping { get; set; } = false;
-        public bool DeviceOn { get; set; } 
+        public bool DeviceOn { get; set; }
+        private static Random rdm = new Random();
+        public int min = 1000;
+        public int max = 10000;
 
 
         public Technologies(string name, int idNumber, bool deviceOn)
@@ -62,7 +65,11 @@ namespace Technology
             DeviceOn = false;
         }
 
-
+        public void Serials()
+        {
+            int newNum = rdm.Next(min, max);
+            Console.WriteLine(newNum);
+        }
 
 
 

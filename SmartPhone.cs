@@ -10,6 +10,7 @@ namespace Technology
     {
 
         public bool DataPlan { get; set; } = true;
+        public static Random rdm = new Random();
 
         public SmartPhone(bool dataPlan, int idNumber) : base(idNumber)
         {
@@ -35,37 +36,11 @@ namespace Technology
             }
         }
 
-        public int SerialsCalculate()
-        {
-            int i = 100;
-            return i++;
-        }
-
         public void Serials()
         {
-            int result = SerialsCalculate();
-            Console.WriteLine(result);
+            int newNum = rdm.Next();
+            Console.WriteLine(newNum);
         }
-
-
-        /*
-        public void Serials()
-        {
-            int i;
-            for (i = 0; i < 100; i++)
-            {
-                Console.WriteLine(i);
-            }
-        }
-        */
-
-        /*
-        public int Serials()
-        {
-            int a = 101;
-            return a + 2;
-        }
-        */
 
 
 

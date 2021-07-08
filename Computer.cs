@@ -10,6 +10,9 @@ namespace Technology
     {
 
         public int RoomNumber { get; set; }
+        private static Random rdm = new Random();
+        public int min = 1000;
+        public int max = 10000;
 
         public Computer(int roomNumber, int idNumber) : base(idNumber)
         {
@@ -22,19 +25,12 @@ namespace Technology
             Console.WriteLine($"Room number: {RoomNumber}");
         }
 
+
         public void Serials()
         {
-            int b = 100;
-            Console.WriteLine($"Computer ID: {b++}");
+            int newNum = rdm.Next();
+            Console.WriteLine(newNum);
         }
-
-        /*
-        public int Serials()
-        {
-            int i = 100;
-            return i + 2;
-        }
-        */
 
 
 
