@@ -8,17 +8,15 @@ namespace Technology
 {
     public abstract class AbstractEntity
     {
+       /*
         public abstract int Numbers { get; }
         private static Random rdm = new Random();
         public int min = 1000;
         public int max = 10000;
+        */
 
+        public abstract void Serials();
 
-        public void Serials()
-        {
-            int newNum = rdm.Next(min, max); 
-            Console.WriteLine(newNum);
-        }
 
 
 
